@@ -63,3 +63,16 @@ i{
 #contact{
   text-align: center;
 }
+.footer-icon{
+  color:white;
+
+}
+.mapouter{
+
+}
+.gmap_canvas {
+  padding-top:15px;
+  overflow:hidden;
+  background:none!important;
+
+}
