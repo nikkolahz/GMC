@@ -7,8 +7,10 @@
     <!-- <link rel="stylesheet" href="../static/css/bootstrap-4.5.0-dist/css/bootstrap.css"> -->
     <title>Gruzo Maternity Clinic</title>
     <link rel="shortcut icon" type="image/x-icon" href="../static/images/GMC_favicon.ico" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <a href="#" class="navbar-brand"><img src="../static/images/GMC_navbar.png"></a>
@@ -48,7 +50,7 @@
             <div class="carousel-item active">
                 <img src="../static/images/slider/image0-1.jpg">
                 <div class="carousel-caption">
-                    <h1 class="text-info">Gruzo Maternity Clinic POC Site</h1>
+                    <h1>Gruzo Maternity Clinic POC Site</h1>
                     <h3>This is a sample site only.</h3>
                     <button type="button" class="btn btn-outline-light btn-lg"> VIEW DEMO</button>
                     <button type="button" class="btn btn-primary btn-lg"> Set Appointment</button>
@@ -65,9 +67,10 @@
 
 
     <!-- About Us -->
+    <section id="about">
     <div class="container-fluid">
     <div class="row jumbotron">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <p class="lead center-text">GMC’s primary service is the normal spontaneous delivery which covers:</p>
                 <ul>
                     <li>
@@ -107,22 +110,25 @@
                     </li>
                 </ul>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <h4>Our Location</h4>
             <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Purok%20Sampaguita%20Colongulo%20Surallah%20Koronadal%2C%20South%20Cotabato&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a>
         </div>
     </div>
     </div>
+    </div>
+    </section>
 
     <!-- Who We Are -->
+    <section id="wwa">
     <div class="container-fluid padding">
         <div class="row welcome text-center">
             <div class="col-12">
                 <h1 class="display-4">
                     Who We Are
                 </h1>
+                <hr>
             </div>
-            <hr>
             <div class="col-12">
                 <p class="lead">
                     Gruzo Maternity Clinic (GMC) started its operations on August 2009 at Sampaguita Street, Colongulo, Surallah, South Cotabato. It is owned by Faith G. Ugbana, a registered midwife practicing the profession for eighteen years. It started with one bed capacity and it expanded to three beds in 2016. Ms. Ugbana advocates that birthing homes must be brought nearer to the less fortunate, hence its location. She believes that this would help lessen the cases of infant and maternal mortality during giving birth. According to Ms. Ugbana, there is no better place to do this than to her own domicile. Barangay Colongulo is one of the 17 barangays in Surallah where the T’boli and the B’laan people live. 
@@ -130,8 +136,43 @@
             </div>
         </div>
     </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container-fluid">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="../static/images/care.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Pre-Natal Care</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas metus id metus dignissim scelerisque. Suspendisse porta condimentum convallis. Maecenas tempor turpis velit, sit amet sodales leo ullamcorper id.
+                  Aenean.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="../static/images/care.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Labor</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas metus id metus dignissim scelerisque. Suspendisse porta condimentum convallis. Maecenas tempor turpis velit, sit amet sodales leo ullamcorper id.
+                  Aenean.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="../static/images/care.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Post Natal Care</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas metus id metus dignissim scelerisque. Suspendisse porta condimentum convallis. Maecenas tempor turpis velit, sit amet sodales leo ullamcorper id.
+                  Aenean.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- Programs -->
+    <section id="programs">
     <div class="container-fluid padding">
     <div class="row text-center padding">
         <div class="col-xs-12 col-sm-6 col-md-4">
@@ -151,8 +192,10 @@
         </div>
     </div>
     </div>
+    </section>
 
     <!-- Contact -->
+    <section id="contact">
     <div class="container-fluid padding">
     <div class="row text-center padding">
         <div class="col-12">
@@ -161,14 +204,16 @@
             </h2>
         </div>
         <div class="col-12 social padding">
-            <a href="https://www.facebook.com/1021471458007560/posts/1568046656683368/?sfnsn=mo"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.facebook.com/1021471458007560/posts/1568046656683368/?sfnsn=mo"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/1021471458007560/posts/1568046656683368/?sfnsn=mo"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/1021471458007560/posts/1568046656683368/?sfnsn=mo"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/1021471458007560/posts/1568046656683368/?sfnsn=mo"><i class="fab fa-facebook fa-5x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-5x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-5x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-5x"></i></a>
         </div>
     </div>
     </div>
     </div>
+    </section>
+
 
     <!-- Footer -->
     <footer>
