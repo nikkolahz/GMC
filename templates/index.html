@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../static/css/bootstrap-4.5.0-dist/css/bootstrap.css"> -->
+    <title>Gruzo Maternity Clinic</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/GMC_favicon.ico" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a href="#" class="navbar-brand"><img src="../static/images/GMC_navbar.png"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarItems">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarItems">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#wwa">Who we are</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#programs">Programs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact us</a>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Image Slider -->
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../static/images/slider/image0-1.jpg">
+                <div class="carousel-caption">
+                    <h1>Gruzo Maternity Clinic POC Site</h1>
+                    <h3>This is a sample site only.</h3>
+                    <button type="button" class="btn btn-outline-light btn-lg"> VIEW DEMO</button>
+                    <button type="button" class="btn btn-primary btn-lg"> Set Appointment</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/images/slider/image1-1.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/images/slider/image2-1.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Us -->
+    <section id="about">
+    <div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <p class="lead center-text">GMC’s primary service is the normal spontaneous delivery which covers:</p>
+                <ul>
+                    <li>
+                        pre-natal check-up
+                    </li>
+                    <li>
+                        post-natal check-up
+                    </li>
+                    <li>
+                        new-born screening
+                    </li>
+                </ul>
+            <p class="lead">
+                Other services include family planning related services such as:
+            </p>
+                <ul>
+                    <li>
+                        selling of contraceptives (i.e. condoms, pills, and injectables)
+                    </li>
+                    <li>
+                        IUD insertion/removal
+                    </li>
+                    <li>
+                        ligation referral
+                    </li>
+                    <li>
+                        PAP smear
+                    </li>
+                    <li>
+                        pregnancy test
+                    </li>
+                    <li>
+                        ear piercing/holing
+                    </li>
+                    <li>
+                        hemoglobin and UTI test
+                    </li>
+                </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h4>Our Location</h4>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Purok%20Sampaguita%20Colongulo%20Surallah%20Koronadal%2C%20South%20Cotabato&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section id="wwa">
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">
+                    Who We Are
+                </h1>
+                <hr>
+            </div>
+            <div class="col-12">
+                <p class="lead">
+                    Gruzo Maternity Clinic (GMC) started its operations on August 2009 at Sampaguita Street, Colongulo, Surallah, South Cotabato. It is owned by Faith G. Ugbana, a registered midwife practicing the profession for eighteen years. It started with one bed capacity and it expanded to three beds in 2016. Ms. Ugbana advocates that birthing homes must be brought nearer to the less fortunate, hence its location. She believes that this would help lessen the cases of infant and maternal mortality during giving birth. According to Ms. Ugbana, there is no better place to do this than to her own domicile. Barangay Colongulo is one of the 17 barangays in Surallah where the T’boli and the B’laan people live. 
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container-fluid">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="../static/images/care.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Pre-Natal Care</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas metus id metus dignissim scelerisque. Suspendisse porta condimentum convallis. Maecenas tempor turpis velit, sit amet sodales leo ullamcorper id.
+                  Aenean.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="../static/images/care.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Labor</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas metus id metus dignissim scelerisque. Suspendisse porta condimentum convallis. Maecenas tempor turpis velit, sit amet sodales leo ullamcorper id.
+                  Aenean.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="../static/images/care.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Post Natal Care</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas metus id metus dignissim scelerisque. Suspendisse porta condimentum convallis. Maecenas tempor turpis velit, sit amet sodales leo ullamcorper id.
+                  Aenean.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Programs -->
+    <section id="programs">
+    <div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-hand-holding-heart fa-5x"></i>
+            <h3>Pledge for the mother's maternity need</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione tempore vero rerum mollitia quisquam ullam fugiat odit. Expedita aliquam nostrum nobis. Repellendus ea nulla ipsum, commodi ipsa voluptas tenetur doloribus.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-baby fa-5x"></i>
+            <h3>Pledge for the baby's needs</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nostrum a rem, ut quidem cupiditate ipsam possimus vel obcaecati numquam! Quam, praesentium accusamus magni sunt voluptatem totam aliquam quis mollitia.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <i class="fas fa-shopping-cart fa-5x"></i>
+            <h3>Buy their local produce</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique optio autem commodi maxime voluptate nisi odio modi tempora provident, consequuntur voluptates doloremque rem in sit! Quaerat dolore laudantium nisi.</p>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+    <div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>
+                Contact
+            </h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="https://www.facebook.com/1021471458007560/posts/1568046656683368/?sfnsn=mo"><i class="fab fa-facebook fa-5x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-5x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-5x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-5x"></i></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+    <div class="container-fluid padding">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <img src="../static/images/GMC_navbar.png">
+            <hr class="light">
+            <p>555-5555</p>
+            <p>email@email.com</p>
+            <p>10th Street Barangay</p>
+            <p> City Province 9500</p>
+        </div>
+        <div class="col-md-4">
+            <hr class="light">
+            <p>We are Open</p>
+            <hr class="light">
+            <p>Mon-Fri: 8AM-5PM</p>
+            <p>Saturdays: 9AM-3PM</p>
+            <p>Sundays: Closed</p>
+        </div>
+        <div class="col-md-4">
+            <hr class="light">
+            <p>Service Areas</p>
+            <hr class="light">
+            <p>Area One</p>
+            <p>Area Two</p>
+            <p>Area Three</p>
+        </div>
+        <div class="col-12">
+            <hr class="light">
+            <h5>&copy; john.exim.ece@gmail.com</h5>
+        </div>
+    </div>
+    </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/dde9ef0b88.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- <script src="../static/css/bootstrap-4.5.0-dist/js/bootstrap.js"></script> -->
+
+</body>
+</html>
